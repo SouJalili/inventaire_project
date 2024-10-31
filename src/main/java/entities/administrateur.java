@@ -1,10 +1,19 @@
 package entities;
-import jakarta.persistence.*;
-
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
 @Entity
+@Data
 public class administrateur extends User {
-	public administrateur(String email, String password, String nom_complet,int telephone ) {
-		super(email, password, nom_complet);
+	 @Id
+	 @GeneratedValue(strategy = GenerationType.IDENTITY)
+	 private Long id;
+
 	} 
 	
 }
+
