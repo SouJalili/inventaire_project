@@ -17,6 +17,6 @@ public class Membre_equipage {
 	@Column
 	private String nationalite;
 	@ManyToOne
-	private Vol vol;
+	private vol vol;
 	
 }
