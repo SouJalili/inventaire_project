@@ -9,9 +9,9 @@ import jakarta.persistence.InheritanceType;
 @Entity
 @Data
 public class administrateur extends User {
-	 @Id
-	 @GeneratedValue(strategy = GenerationType.IDENTITY)
-	 private Long id;
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private Long id;
 
 	} 
 	
