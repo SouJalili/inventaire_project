@@ -17,6 +17,7 @@ public class vol {
 	private String aeroport_depart;
 	@Column
 	private String aeroport_arrive;
+	@Column
 	@OneToMany(mappedBy = "vol")
         private List<Membre_equipage>membreEquipage;
 	
