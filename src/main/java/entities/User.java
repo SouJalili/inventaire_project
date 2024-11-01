@@ -12,14 +12,14 @@ import jakarta.persistence.InheritanceType;
 @Data
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @Column
-    private String email;
-    @Column
-    private String password;
-    @Column
-    private String nom_complet;
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private Long id;
+@Column
+private String email;
+@Column
+private String password;
+@Column
+private String nom_complet;
    
 }
